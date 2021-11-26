@@ -1,0 +1,36 @@
+@media screen and (max-width: 1399px) { 
+    #heroImg img {
+        width: 290px;
+    }
+    #comicsBody img {
+        width: 253px;
+        height: 432px;
+    }
+    #seriesBody img {
+        width: 253px;
+        height: 432px;
+    }
+  }
+
+  @media screen and (max-width: 600px) { 
+    #comicsBody img {
+        width: 175px;
+        height: 300px;
+    }
+    #seriesBody img {
+        width: 175px;
+        height: 300px;
+    }
+  }
+
+  @media screen and (max-width: 375px) { 
+    #comicsBody img {
+        width: 315px;
+        height: 470px;
+    }
+    #seriesBody img {
+        width: 315px;
+        height: 470px;
+    }
+  }
+

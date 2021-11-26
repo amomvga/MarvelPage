@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/global.css">
+    <link rel="stylesheet" href="styles/responsive.css">
+    <link rel="stylesheet" href="styles/owl/owl.carousel.min.css">
+    <link rel="stylesheet" href="styles/owl/owl.theme.default.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>MARVEL</title>
+</head>
+
+<body>
+    <div id="header">
+        <img class="image-fluid" src="public/Capturar.PNG">
+    </div>
+
+    <div id="logo" class="text-center">
+        <img class="image-fluid" src="public/MarvelLogo.png">
+    </div>
+
+    <div class="text-end p-3">
+        <form>
+            <input class="d-none" type="search" placeholder="Search">
+            <input id="search" type="text" placeholder="Search"> 
+            <svg xmlns="http://www.w3.org/2000/svg" id="btn" width="16" height="16" fill="currentColor"
+                class="bi bi-search" type="submit" viewBox="0 0 16 16">
+                <path
+                    d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+            </svg>
+        </form>
+    </div>
+
+    <div id="body" class="container-fluid">
+
+        <div class="container">
+            <div class="row">
+                <div id="heroImg" class="col-sm-12 col-md-6 text-center mb-5"></div>
+                <div id="card" class="col-sm-12 col-md-6 mt-4">
+                    <h1 id="heroName" class="text-center p-2"></h1>
+                    <p id="heroDescription" class="text-start mt-5 p-2"></p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div id="comicsBody" class="container-fluid">
+        <div class="card-body">
+            <h3 class="mt-4">Comics</h3>
+            <div class="carrosel">
+                <div id="comics" class="owl-carousel owl-theme">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="seriesBody" class="container-fluid">
+        <div class="card-body">
+            <h3 class="mt-4">Series</h3>
+            <div class="carrosel">
+                <div id="series" class="owl-carousel owl-theme">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="Modal" tabindex="-1" aria-labelledby="ModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            <div id="modalDescription" class="modal-body p-4" style="color: black; font-size: larger;"></div>
+          </div>
+        </div>
+      </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="scripts/script.js"></script>
+    <script src="scripts/owl/jquery.min.js"></script>
+    <script src="scripts/owl/owl.carousel.min.js"></script>
+</body>
+</html>
