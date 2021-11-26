@@ -14,10 +14,14 @@ function heroSearch(nameSearch) {
     if (nameSearch == null || nameSearch == '') {
         nameSearch = 'iron man'
     }
-    fetch(`http://gateway.marvel.com/v1/public/characters?ts=${timeStamp}&apikey=${publicKey}&hash=${md5}&name=${nameSearch}`
+    var initial = fetch(`http://gateway.marvel.com/v1/public/characters?ts=${timeStamp}&apikey=${publicKey}&hash=${md5}&name=${nameSearch}`
     ).then((response) => {
         return response.json();
     }).then((jsonParsed) => {
+        if(jsonParsed.data.results.length == 0) {
+            alert("Nome do personagem incorreto ou não é um personagem Marvel")
+            heroSearch()
+        }
         document.getElementById("heroName").innerHTML = jsonParsed.data.results[0].name
         document.getElementById("heroDescription").innerHTML = Description(jsonParsed.data.results[0].description)
         var img = document.createElement("img")
